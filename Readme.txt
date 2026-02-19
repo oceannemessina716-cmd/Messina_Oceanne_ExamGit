@@ -1,0 +1,1 @@
+ce mini projet git est destiné a une evaluation des notions vu en cours afin de savoir si les compétences sont deja callées.
