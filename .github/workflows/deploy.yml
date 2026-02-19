@@ -1,0 +1,21 @@
+name: Deploy Application
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy Step
+        env:
+          TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          echo "Début du déploiement."
+          echo "Token utilisé : $TOKEN"
+          echo "Déploiement terminé par Messina Océane"
